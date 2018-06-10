@@ -51,7 +51,7 @@ int dfs(int v,int t,int f){
 
 int max_flow(int s,int t){
   int flow = 0;
-  for(;;){
+  while(1){
     bfs(s);
     if(level[t] < 0)return flow;
     memset(iter,0,sizeof(iter));
